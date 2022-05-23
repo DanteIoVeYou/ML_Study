@@ -20,4 +20,7 @@ def menu():
     else:
         print('非法输入')
 # main
-menu()
+# menu()
+
+import add_module
+print(add_module.add(1,2))

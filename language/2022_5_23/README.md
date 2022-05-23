@@ -56,3 +56,34 @@ cursor.execute(sql)
 ```python
 conn.commit()
 ```
+
+# 模块与包
+- 解释器内建模块
+- python标准库
+- 第三方模块
+- 应用程序自定义模块
+ ## 导入模块
+> 能使用模块内的所有方法
+```python
+import time
+time.sleep(1)
+```
+ ## 导入模块内的某个方法
+ > 想用其他方法还得继续import
+ ```python
+from time import sleep
+sleep(1)
+ ```
+
+ ## 自定义模块
+ > 文件add_module.py
+ ```python
+def add(x, y):
+    return x + y
+```
+
+> 文件main.py
+```python
+import add_module
+print(add_module.add(1,2))
+```
