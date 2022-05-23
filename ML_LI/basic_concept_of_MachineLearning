@@ -1,0 +1,18 @@
+Machine Learing = Looking for function
+Different types of Functions
+- Regression
+The function outputs a scalar
+	PM2.5 Prediction
+- Classification
+Given options(classes), the function outputs the correct one
+	Spam filtering
+	Alpha Go
+
+1. Function with unknown 
+
+2. Define Loss from training data
+- mean absolute error ->MAE
+- mean square error ->MSE
+
+3. Optimization
+
