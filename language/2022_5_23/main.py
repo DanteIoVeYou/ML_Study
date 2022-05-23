@@ -29,5 +29,9 @@ def menu():
 #print(ret)
 #print(__name__)
 
-import add_module
-add_module.log.Log()
+# import add_module
+# add_module.log.Log()
+import os
+# pwd = os.listdir()
+# print(pwd)
+os.system('ifconfig')

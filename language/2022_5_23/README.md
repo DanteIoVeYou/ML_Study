@@ -98,8 +98,24 @@ print(add_module.add(1,2))
 
 ## time
 
-- time()：返回时间戳
-- 
+- time.time()：返回时间戳
+- time.strftime("%Y\%m\%d-%w")：把时间戳转换为可视化的时间
+- time.sleep()：睡眠
+
+## random
+ - random.choice(列表名)：从列表中随机选出一个值
+ - random.randrange(x,y)
+ - random.sample(list, n)：列表中随机n个元素随机组合
+ - random.shuffle(list)：将原始列表打乱
+ - 
+
+## os
+- getcwd()
+- makedirs()
+- removedirs() 
+- listdir()
+- rename('oldname','newname')
+- system
 
 # 程序执行入口
 > 只要在某一个文件中出现下列代码，说明这是程序入口
@@ -109,4 +125,28 @@ if __name__ == '__main__':
 ```
 > __name__指的是模块名；在执行文件中就是指__main__
 
+# 正则表达式
+re
 
+# 面向对象
+- 类
+- 对象
+```python
+class 类名():
+    pass
+
+class Person():
+    name = 'zhangsan'
+    age = 19
+    money = 10000000
+    def GetMoney():
+        return money
+    def GetInfo():
+        print('%s-%s\n'%(name, age))
+```
+- 类变量
+- 实例变量
+- 定义在__init__内部的变量是实例变量
+- 类方法
+- 实例方法
+- 静态方法
