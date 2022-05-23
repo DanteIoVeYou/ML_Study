@@ -27,3 +27,32 @@ f.seek(offset, from_what)
 with open() as fp:
     fp.write()
 ```
+
+# pymysql数据库操作
+
+## 连接
+```python
+conn = pymysql.Connect(
+    host = '127.0.0.1',
+    port = 3306,
+    user = '',
+    password = '',
+    db = '',
+    charset = 'utf8',
+)
+```
+
+## 创建游标对象用来执行sql语句
+```python
+cursor = conn.cursor()
+```
+
+## 通过创建好的游标对象执行sql语句
+```python
+sql = ''
+cursor.execute(sql)
+```
+## 事务的处理
+```python
+conn.commit()
+```
