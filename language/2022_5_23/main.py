@@ -22,5 +22,12 @@ def menu():
 # main
 # menu()
 
+#import add_module
+#print(add_module.add(1,2))
+
+#ret = add(1, 22)
+#print(ret)
+#print(__name__)
+
 import add_module
-print(add_module.add(1,2))
+add_module.log.Log()

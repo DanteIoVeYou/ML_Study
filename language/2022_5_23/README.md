@@ -57,11 +57,13 @@ cursor.execute(sql)
 conn.commit()
 ```
 
-# 模块与包
+# 模块
 - 解释器内建模块
 - python标准库
 - 第三方模块
 - 应用程序自定义模块
+
+> import 在执行模块中所有的代码
  ## 导入模块
 > 能使用模块内的所有方法
 ```python
@@ -87,3 +89,24 @@ def add(x, y):
 import add_module
 print(add_module.add(1,2))
 ```
+
+# 包
+
+> 有```__init__.py```的目录
+
+# 常见模块
+
+## time
+
+- time()：返回时间戳
+- 
+
+# 程序执行入口
+> 只要在某一个文件中出现下列代码，说明这是程序入口
+```python
+if __name__ == '__main__':
+    pass
+```
+> __name__指的是模块名；在执行文件中就是指__main__
+
+
